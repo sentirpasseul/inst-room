@@ -1,0 +1,136 @@
+@import "./reset.css";
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-Regular.ttf");
+}
+
+header {
+  .header__upper {
+    display: flex;
+    background-color: #212526;
+
+    .header__upper-content {
+      display: flex;
+      justify-content: center;
+      padding-right: 110px;
+      padding-left: 110px;
+
+      .header__logo {
+        cursor: pointer;
+        margin: 20px 80px;
+      }
+
+      .header__info {
+        display: flex;
+
+        .info__time {
+          font-family: "Raleway";
+          font-style: normal;
+          font-weight: 500;
+          color: white;
+          margin: 38px 50px;
+        }
+
+        .info__contacts {
+          margin-top: 25px;
+          margin-right: 40px;
+          font-family: "Raleway";
+
+          .info__contacts-number {
+            font-weight: 600;
+            color: white;
+            cursor: pointer;
+          }
+
+          .info__contacts-makeCall {
+            margin-top: 10px;
+            font-weight: 500;
+            color: #fc573b;
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+
+        .info__buttons {
+          .info__buttons-button {
+            background-color: #3b3b3b;
+            padding: 32px 30px;
+            margin: 1px;
+          }
+        }
+
+        .info__sum {
+          font-family: "Raleway";
+          margin: 25px 10px;
+          color: white;
+          .info__sum-title {
+            font-weight: 500;
+          }
+
+          .info__sum-summary {
+            margin-top: 4px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  .header__lower {
+    display: flex;
+    background-color: black;
+    padding-right: 110px;
+    padding-left: 110px;
+    font-family: 'Raleway';
+    font-weight: 500;
+
+    .header__catalog {
+      color: white;
+      margin: 20px 30px 20px 80px;
+      border: 1px solid #f05a00;
+      border-radius: 5px;
+      padding: 15px;
+
+      .header__catalog-text {
+        margin-left: 15px;
+      }
+    }
+
+    .header__menu {
+      display: flex;
+      color: white;
+      margin-top: 35px;
+
+      .header__menu-item {
+        margin-left: 17px;
+        margin-right: 17px;
+      }
+    }
+
+    .header__links {
+      display: flex;
+      color: white;
+      margin: 26px 60px 26px 10px;
+
+      .header__links-item {
+        margin-left: 10px;
+      }
+    }
+    .header__search {
+      display: flex;
+      background: #ffffff;
+      border-radius: 5px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      
+      .header__search-ic {
+        margin: 14px 10px 14px 20px;
+      }
+
+      .header__search-input {
+        margin-right: 60px;
+      }
+    }
+  }
+}
