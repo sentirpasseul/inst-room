@@ -1,0 +1,40 @@
+@import "./reset.css";
+
+.container__banners {
+  background: #212526;
+  display: flex;
+  padding: 20px 310px;
+
+  .banner-instrument {
+    display: flex;
+    background-image: url("../img/banner_item.png");
+    padding: 32px;
+    max-width: 640px;
+    min-height: 488px;
+
+    .bunner-button--catalog {
+      background: #f05a00;
+      border-radius: 5px;
+      text-transform: uppercase;
+      padding: 17px 32px;
+      color: #ffffff;
+    }
+
+    .bunner-button--next {
+      background: #000000;
+      border-radius: 0px 5px;
+    }
+  }
+
+  .banner-stoks {
+    background-image: url("../img/banner_stocks.png");
+  }
+
+  .banner-double--new-item {
+    background-image: url("../img/banner_stocks_item.png");
+  }
+
+  .banner-double--stocks-item {
+    background-image: url("../img/banner_new_item.png");
+  }
+}

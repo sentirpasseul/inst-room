@@ -1,0 +1,58 @@
+@import './reset.css';
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway/Raleway-Regular.ttf');
+}
+
+.container__item {
+    background: white;
+    max-width: 310px;
+    max-height: 340px;
+    font-family: 'Raleway';
+    font-weight: 500;
+    padding: 12px;
+
+
+    .item__buttons {
+        display: flex;
+
+        .item__buttons--button {
+            border-color: #DEDBDB
+        }
+    }
+
+    .item__title {
+        font-size: 16px;
+    }
+
+    .item__buy {
+        font-weight: 600;
+
+        .item__price {
+            font-size: 20px;
+
+            .item__price-old {
+                font-size: 16px;
+                text-decoration: line-through;
+                color: #DEDBDB;
+            }
+        }
+
+        .item__exist {
+
+
+            .item__exist-text {
+                color: #126935;
+                text-transform: lowercase;
+            }
+        }
+
+        .item__cart {
+
+            .item__cart-icon {
+                border-color: #126935;
+            }
+        }
+    }
+}

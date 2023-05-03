@@ -56,9 +56,14 @@ header {
           .info__buttons-button {
             background-color: #3b3b3b;
             padding: 32px 30px;
-            margin: 1px;
+            margin-right: 1px;
+            &:hover {
+              background: #F05A00;
+            }
           }
-        }
+          }
+
+          
 
         .info__sum {
           font-family: "Raleway";

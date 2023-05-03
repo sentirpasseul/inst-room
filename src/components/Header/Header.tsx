@@ -1,14 +1,14 @@
 import "../../scss/Header.scss";
 import header_logo from "../../img/header_logo.svg";
-import ic_heart from "../../img/ic_heart.svg";
-import ic_stats from "../../img/ic_stats.svg";
-import ic_account from "../../img/ic_account.svg";
-import ic_cart from "../../img/ic_cart.svg";
-import ic_burger from "../../img/ic_burger.svg";
-import ic_instagram from "../../img/ic_instagram.svg";
-import ic_vk from "../../img/ic_vk.svg";
-import ic_facebook from "../../img/ic_facebook.svg";
-import ic_search from "../../img/ic_search.svg";
+import { ReactComponent as HeartIcon} from "../../img/ic_heart.svg";
+import { ReactComponent as StatsIcon} from "../../img/ic_stats.svg";
+import { ReactComponent as AccountIcon} from "../../img/ic_account.svg";
+import { ReactComponent as CartIcon} from "../../img/ic_cart.svg";
+import { ReactComponent as BurgerIcon} from "../../img/ic_burger.svg";
+import { ReactComponent as InstagramIcon} from "../../img/ic_instagram.svg";
+import { ReactComponent as VkIcon} from "../../img/ic_vk.svg";
+import { ReactComponent as FacebookIcon} from "../../img/ic_facebook.svg";
+import { ReactComponent as SearchIcon} from "../../img/ic_search.svg";
 
 export function Header() {
   return (
@@ -28,16 +28,16 @@ export function Header() {
             </div>
             <div className="info__buttons info-item">
               <button className="info__buttons-button">
-                <img src={ic_heart} alt="" />
+                <HeartIcon />
               </button>
               <button className="info__buttons-button">
-                <img src={ic_stats} alt="" />
+                <StatsIcon />
               </button>
               <button className="info__buttons-button">
-                <img src={ic_account} alt="" />
+                <AccountIcon />
               </button>
               <button className="info__buttons-button">
-                <img src={ic_cart} alt="" />
+                <CartIcon />
               </button>
             </div>
             <div className="info__sum info-item">
@@ -49,7 +49,7 @@ export function Header() {
       </section>
       <div className="header__lower">
         <div className="header__catalog">
-          <img src={ic_burger} alt="Каталог товаров" />
+          <BurgerIcon />
           <span className="header__catalog-text">Каталог товаров</span>
         </div>
         <ul className="header__menu">
@@ -68,18 +68,18 @@ export function Header() {
         </ul>
         <div className="header__links">
           <div className="header__links-item">
-            <img src={ic_instagram} alt="" />
+            <InstagramIcon />
           </div>
           <div className="header__links-item">
-            <img src={ic_vk} alt="" />
+            <VkIcon />
           </div>
           <div className="header__links-item">
-            <img src={ic_facebook} alt="" />
+            <FacebookIcon />
           </div>
         </div>
         <div className="header__search">
           <div className="header__search-ic">
-            <img src={ic_search} alt="" />
+            <SearchIcon />
           </div>
           <input
             className="header__search-input"
