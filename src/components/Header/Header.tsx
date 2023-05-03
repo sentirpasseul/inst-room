@@ -1,4 +1,4 @@
-import "../../scss/Header.scss";
+import "./Header.scss";
 import header_logo from "../../img/header_logo.svg";
 import { ReactComponent as HeartIcon} from "../../img/ic_heart.svg";
 import { ReactComponent as StatsIcon} from "../../img/ic_stats.svg";
@@ -28,16 +28,16 @@ export function Header() {
             </div>
             <div className="info__buttons info-item">
               <button className="info__buttons-button">
-                <HeartIcon />
+                <HeartIcon className="info__buttons-button-icon"/>
               </button>
               <button className="info__buttons-button">
-                <StatsIcon />
+                <StatsIcon className="info__buttons-button-icon"/>
               </button>
               <button className="info__buttons-button">
-                <AccountIcon />
+                <AccountIcon className="info__buttons-button-icon"/>
               </button>
               <button className="info__buttons-button">
-                <CartIcon />
+                <CartIcon className="info__buttons-button-icon"/>
               </button>
             </div>
             <div className="info__sum info-item">

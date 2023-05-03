@@ -1,4 +1,5 @@
-import "../../scss/Item.scss";
+import React from "react";
+import "./Item.scss";
 import { ReactComponent as StatsIcon } from "../../img/ic_stats.svg";
 import { ReactComponent as HeartIcon } from "../../img/ic_heart.svg";
 import { ReactComponent as CartIcon } from "../../img/ic_cart.svg";
@@ -6,7 +7,13 @@ import item_img from "../../img/item_img.png";
 import { ReactComponent as DoneIcon } from "../../img/ic_done.svg";
 import { ReactComponent as StepIcon } from "../../img/ic_step.svg";
 
-export function Item() {
+interface ItemsProps {
+    id: number;
+    title: string;
+    price: number;
+}
+
+export function Item({ product }: any) {
   return (
     <div className="container__item">
       <div className="item__header">
@@ -32,12 +39,12 @@ export function Item() {
         </div>
       </div>
       <div className="item__title">
-        <span>Эмаль Condor ПФ-115</span>
+        <span>{product.title}</span>
       </div>
       <div className="item__buy">
         <div className="item__price">
-          <span className="item__price-current">500 ₽</span>
-          <span className="item__price-old">720 ₽</span>
+          <span className="item__price-current">{product.price}</span>
+          <span className="item__price-old">{product.price}</span>
         </div>
         <div className="item__exist">
           <DoneIcon className="item__exist-icon"/>
