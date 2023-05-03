@@ -1,58 +1,107 @@
-@import './reset.css';
+@import "./reset.css";
 
 @font-face {
-    font-family: 'Raleway';
-    src: url('../fonts/Raleway/Raleway-Regular.ttf');
+  font-family: "Raleway";
+  src: url("../fonts/Raleway/Raleway-Regular.ttf");
 }
 
 .container__item {
-    background: white;
-    max-width: 310px;
-    max-height: 340px;
-    font-family: 'Raleway';
-    font-weight: 500;
-    padding: 12px;
+  background: white;
+  max-width: 310px;
+  max-height: 340px;
+  font-family: "Raleway";
+  font-weight: 500;
+  padding: 12px;
 
+  .item__header {
+    display: flex;
 
-    .item__buttons {
-        display: flex;
+    .item__header-buttons {
+      display: flex;
+      margin-left: auto;
+      margin-right: 0em;
 
-        .item__buttons--button {
-            border-color: #DEDBDB
+      .item__button {
+        border-color: #dedbdb;
+
+        .item__button-icon {
+          stroke: #dedbdb;
         }
+      }
     }
+  }
 
-    .item__title {
+  .item__image {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 12px;
+    max-width: 212px;
+    max-height: 184px;
+  }
+
+  .item__step {
+    display: flex;
+    margin-bottom: 14px;
+
+    .item__step-img {
+      margin: 4px;
+    }
+  }
+
+  .item__title {
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+
+  .item__buy {
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+    font-weight: 600;
+
+    .item__price {
+      padding: 12px 0 12px;
+
+      font-size: 16px;
+
+      .item__price-current {
+        margin-right: 10px;
+      }
+
+      .item__price-old {
         font-size: 16px;
+        text-decoration: line-through;
+        color: #dedbdb;
+        margin-right: 34px;
+      }
     }
 
-    .item__buy {
-        font-weight: 600;
-
-        .item__price {
-            font-size: 20px;
-
-            .item__price-old {
-                font-size: 16px;
-                text-decoration: line-through;
-                color: #DEDBDB;
-            }
-        }
-
-        .item__exist {
-
-
-            .item__exist-text {
-                color: #126935;
-                text-transform: lowercase;
-            }
-        }
-
-        .item__cart {
-
-            .item__cart-icon {
-                border-color: #126935;
-            }
-        }
+    .item__exist {
+      padding: 12px 0 12px;
+      margin-right: 10px;
+      .item__exist-icon {
+        max-width: 16px;
+        max-height: 16px;
+        stroke: #126935;
+        margin-right: 4px;
+      }
+      .item__exist-text {
+        color: #126935;
+        text-transform: lowercase;
+      }
     }
+
+    .item__cart {
+      margin-left: auto;
+      margin-right: 0em;
+      border: 2px solid #f05a00;
+      border-radius: 5px 0px;
+      padding: 6px 10px;
+
+      .item__cart-icon {
+        stroke: #f05a00;
+      }
+    }
+  }
 }
