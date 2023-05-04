@@ -9,8 +9,12 @@ import { ReactComponent as InstagramIcon} from "../../img/ic_instagram.svg";
 import { ReactComponent as VkIcon} from "../../img/ic_vk.svg";
 import { ReactComponent as FacebookIcon} from "../../img/ic_facebook.svg";
 import { ReactComponent as SearchIcon} from "../../img/ic_search.svg";
+import { useState } from "react";
+
 
 export function Header() {
+  const [textSearch, setTextSearch] = useState('');
+
   return (
     <header className="header">
       <section className="header__upper">
@@ -82,6 +86,8 @@ export function Header() {
             <SearchIcon />
           </div>
           <input
+            value={textSearch}
+            onChange={e => setTextSearch(e.target.value)}
             className="header__search-input"
             type="text"
             placeholder="Поиск по каталогу"
