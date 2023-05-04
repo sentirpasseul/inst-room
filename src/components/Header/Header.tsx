@@ -1,26 +1,27 @@
 import "./Header.scss";
 import header_logo from "../../img/header_logo.svg";
-import { ReactComponent as HeartIcon} from "../../img/ic_heart.svg";
-import { ReactComponent as StatsIcon} from "../../img/ic_stats.svg";
-import { ReactComponent as AccountIcon} from "../../img/ic_account.svg";
-import { ReactComponent as CartIcon} from "../../img/ic_cart.svg";
-import { ReactComponent as BurgerIcon} from "../../img/ic_burger.svg";
-import { ReactComponent as InstagramIcon} from "../../img/ic_instagram.svg";
-import { ReactComponent as VkIcon} from "../../img/ic_vk.svg";
-import { ReactComponent as FacebookIcon} from "../../img/ic_facebook.svg";
-import { ReactComponent as SearchIcon} from "../../img/ic_search.svg";
+import { ReactComponent as HeartIcon } from "../../img/ic_heart.svg";
+import { ReactComponent as StatsIcon } from "../../img/ic_stats.svg";
+import { ReactComponent as AccountIcon } from "../../img/ic_account.svg";
+import { ReactComponent as CartIcon } from "../../img/ic_cart.svg";
+import { ReactComponent as BurgerIcon } from "../../img/ic_burger.svg";
+import { ReactComponent as InstagramIcon } from "../../img/ic_instagram.svg";
+import { ReactComponent as VkIcon } from "../../img/ic_vk.svg";
+import { ReactComponent as FacebookIcon } from "../../img/ic_facebook.svg";
+import { ReactComponent as SearchIcon } from "../../img/ic_search.svg";
 import { useState } from "react";
 
-
 export function Header() {
-  const [textSearch, setTextSearch] = useState('');
+  const [textSearch, setTextSearch] = useState("");
+
+  console.log();
 
   return (
     <header className="header">
       <section className="header__upper">
         <div className="header__upper-content">
           <div className="header__logo">
-            <img src={header_logo} alt="" />
+            <img src="/img/header_logo.svg" alt="" />
           </div>
           <div className="header__info">
             <span className="info__time info-item">
@@ -30,18 +31,18 @@ export function Header() {
               <p className="info__contacts-number">+7 495 120-32-14</p>
               <p className="info__contacts-makeCall">Заказать звонок</p>
             </div>
-            <div className="info__buttons info-item">
+            <div className="info__buttons">
               <button className="info__buttons-button">
-                <HeartIcon className="info__buttons-button-icon"/>
+                <HeartIcon className="info__buttons-button-icon" />
               </button>
               <button className="info__buttons-button">
-                <StatsIcon className="info__buttons-button-icon"/>
+                <StatsIcon className="info__buttons-button-icon" />
               </button>
               <button className="info__buttons-button">
-                <AccountIcon className="info__buttons-button-icon"/>
+                <AccountIcon className="info__buttons-button-icon" />
               </button>
               <button className="info__buttons-button">
-                <CartIcon className="info__buttons-button-icon"/>
+                <CartIcon className="info__buttons-button-icon" />
               </button>
             </div>
             <div className="info__sum info-item">
@@ -87,7 +88,7 @@ export function Header() {
           </div>
           <input
             value={textSearch}
-            onChange={e => setTextSearch(e.target.value)}
+            onChange={(e) => setTextSearch(e.target.value)}
             className="header__search-input"
             type="text"
             placeholder="Поиск по каталогу"
