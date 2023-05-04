@@ -13,7 +13,10 @@ interface ItemsProps {
     price: number;
     img: string;
 }
+
 export function Item({ product }: any) {
+
+ console.log(`static/media/${product.img}`);
   return (
     <div className="container__item">
       <div className="item__header">
@@ -25,12 +28,12 @@ export function Item({ product }: any) {
             <StatsIcon className="button-icon--stats" />
           </div>
           <div className="item__button">
-            <HeartIcon className="button-icon--heart" />
+            <HeartIcon className="button-icon--heart"/>
           </div>
         </div>
       </div>
-      <div className="item__image">
-        <img src="../" alt={ "../" + product.img}/>
+      <div className="container__image">
+        <img className="container__image-item" src={product.img} alt=""/>
         
         <div className="item__step">
             <StepIcon className="item__step-img"/>
