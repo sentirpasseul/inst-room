@@ -22,15 +22,15 @@ export function Item({ product }: any) {
         </div>
         <div className="item__header-buttons">
           <div className="item__button">
-            <StatsIcon className="item__button-icon" />
+            <StatsIcon className="button-icon--stats" />
           </div>
           <div className="item__button">
-            <HeartIcon className="item__button-icon" />
+            <HeartIcon className="button-icon--heart" />
           </div>
         </div>
       </div>
       <div className="item__image">
-        <img src={""} alt="Товар"/>
+        <img src="../" alt={ "../" + product.img}/>
         
         <div className="item__step">
             <StepIcon className="item__step-img"/>
