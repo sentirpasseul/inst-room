@@ -11,8 +11,8 @@ interface ItemsProps {
     id: number;
     title: string;
     price: number;
+    img: string;
 }
-
 export function Item({ product }: any) {
   return (
     <div className="container__item">
@@ -30,7 +30,8 @@ export function Item({ product }: any) {
         </div>
       </div>
       <div className="item__image">
-        <img src={item_img} alt="Товар"/>
+        <img src={""} alt="Товар"/>
+        
         <div className="item__step">
             <StepIcon className="item__step-img"/>
             <StepIcon className="item__step-img"/>
