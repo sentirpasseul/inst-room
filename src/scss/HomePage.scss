@@ -1,0 +1,7 @@
+@import '../scss/reset.css';
+
+.container__items {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}

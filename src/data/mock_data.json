@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Эмаль Condor ПФ-115",
+    "price": 500,
+    "exist": true,
+    "img": "../img/item_img.png"
+  },
+  {
+    "id": 2,
+    "title": "Кирпич рядовой ЛСР (РКЗ) полнотелый М250",
+    "price": 420,
+    "exist": true,
+    "img": "../img/item_brick_img.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Пазогребневая плита ВОЛМА Гидро",
+    "price": 300,
+    "exist": true,
+    "img": "../img/item_paint.png"
+  },
+  {
+    "id": 4,
+    "title": "Эмаль Condor ПФ-115",
+    "price": 500,
+    "exist": true,
+    "img": "../img/item_img.png"
+  },
+  {
+    "id": 5,
+    "title": "Эмаль Condor ПФ-115",
+    "price": 500,
+    "exist": true,
+    "img": "../img/item_img.png"
+  },
+  {
+    "id": 6,
+    "title": "Эмаль Condor ПФ-115",
+    "price": 500,
+    "exist": true,
+    "img": "../img/item_img.png"
+  },
+  {
+    "id": 7,
+    "title": "Эмаль Condor ПФ-115",
+    "price": 500,
+    "exist": true,
+    "img": "../img/item_img.png"
+  },
+  {
+    "id": 8,
+    "title": "Эмаль Condor ПФ-115",
+    "price": 500,
+    "exist": true,
+    "img": "../img/item_img.png"
+  },
+  {
+    "id": 9,
+    "title": "Эмаль Condor ПФ-115",
+    "price": 500,
+    "exist": true,
+    "img": "../img/item_img.png"
+  }
+]
