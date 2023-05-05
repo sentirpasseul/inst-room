@@ -25,7 +25,6 @@ export function Item({ product }: any) {
     setIsCompared((prev) => !prev);
   };
 
-  console.log(isFavorite);
 
   return (
     <div className="container__item">

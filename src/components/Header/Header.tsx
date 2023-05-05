@@ -9,10 +9,21 @@ import { ReactComponent as InstagramIcon } from "../../img/ic_instagram.svg";
 import { ReactComponent as VkIcon } from "../../img/ic_vk.svg";
 import { ReactComponent as FacebookIcon } from "../../img/ic_facebook.svg";
 import { ReactComponent as SearchIcon } from "../../img/ic_search.svg";
-import { useState } from "react";
+
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export function Header() {
   const [textSearch, setTextSearch] = useState("");
+  const [isFavoriteHeader, setIsFavoriteHeader] = useState(false);
+
+  const handleClickFavHeader = () => {
+    setIsFavoriteHeader((prev) => !prev);
+  };
+
+  useEffect(() => {
+    console.log("Нажата");
+  }, [isFavoriteHeader]);
 
   console.log();
 
@@ -21,7 +32,9 @@ export function Header() {
       <section className="header__upper">
         <div className="header__upper-content">
           <div className="header__logo">
-            <img src="/img/header_logo.svg" alt="" />
+            <Link to="/">
+              <img src="/img/header_logo.svg" alt="" />
+            </Link>
           </div>
           <div className="header__info">
             <span className="info__time info-item">
@@ -32,18 +45,18 @@ export function Header() {
               <p className="info__contacts-makeCall">Заказать звонок</p>
             </div>
             <div className="info__buttons">
-              <button className="info__buttons-button">
+              <Link to="/favorites" className="info__buttons-button">
                 <HeartIcon className="info__buttons-button-icon" />
-              </button>
-              <button className="info__buttons-button">
+              </Link>
+              <Link to="/comparing" className="info__buttons-button">
                 <StatsIcon className="info__buttons-button-icon" />
-              </button>
-              <button className="info__buttons-button">
+              </Link>
+              <Link to="/account" className="info__buttons-button">
                 <AccountIcon className="info__buttons-button-icon" />
-              </button>
-              <button className="info__buttons-button">
+              </Link>
+              <Link to="/cart" className="info__buttons-button">
                 <CartIcon className="info__buttons-button-icon" />
-              </button>
+              </Link>
             </div>
             <div className="info__sum info-item">
               <p className="info__sum-title">Товаров на сумму</p>
