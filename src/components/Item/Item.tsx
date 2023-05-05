@@ -1,7 +1,6 @@
 import "./Item.scss";
 import { ReactComponent as StatsIcon } from "../../img/ic_stats.svg";
 import { ReactComponent as HeartIcon } from "../../img/ic_heart.svg";
-import { ReactComponent as HeartCheckedIcon } from "../../img/ic_heart-checked.svg";
 import { ReactComponent as CartIcon } from "../../img/ic_cart.svg";
 import { ReactComponent as DoneIcon } from "../../img/ic_done.svg";
 import { ReactComponent as StepIcon } from "../../img/ic_step.svg";
@@ -16,9 +15,14 @@ interface ItemsProps {
 
 export function Item({ product }: any) {
   const [isFavorite, setIsFavorite] = useState(false);
+  const [isCompared, setIsCompared] = useState(false);
 
   const handleClickFav = () => {
     setIsFavorite((prev) => !prev);
+  };
+
+  const handleClickCompare = () => {
+    setIsCompared((prev) => !prev);
   };
 
   console.log(isFavorite);
@@ -31,13 +35,20 @@ export function Item({ product }: any) {
         </div>
         <div className="item__header-buttons">
           <div className="item__button">
-            <StatsIcon className="button-stats" />
+            {isCompared ? (
+              <StatsIcon className="button-stats--active" onClick={handleClickCompare}/>
+            ) : (
+              <StatsIcon className="button-stats" onClick={handleClickCompare} />
+            )}
           </div>
           <div className="item__button">
             {isFavorite ? (
-              <HeartCheckedIcon className="button-heart-active" onClick={handleClickFav}/>
+              <HeartIcon
+                className="button-heart--active"
+                onClick={handleClickFav}
+              />
             ) : (
-              <HeartIcon className="button-heart" onClick={handleClickFav}/>
+              <HeartIcon className="button-heart" onClick={handleClickFav} />
             )}
           </div>
         </div>

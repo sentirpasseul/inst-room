@@ -31,7 +31,16 @@
 
           &:hover {
             cursor: pointer;
-            stroke: sandybrown;
+            stroke: #f4a460;
+          }
+        }
+
+        .button-stats--active {
+          stroke: #f4a460;
+          margin-right: 8px;
+
+          &:hover {
+            cursor: pointer;
           }
         }
 
@@ -45,7 +54,7 @@
         }
 
 
-        .button-heart-active {
+        .button-heart--active {
           fill: #EB5757;
 
           &:hover {
