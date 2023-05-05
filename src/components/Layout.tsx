@@ -7,7 +7,6 @@ export function Layout() {
     <>
       <Header />
       <Body>
-        <ContainerBanners />
       </Body>
     </>
   );
