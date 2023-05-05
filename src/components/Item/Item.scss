@@ -27,6 +27,7 @@
 
         .button-stats {
           stroke: #dedbdb;
+          margin-right: 8px;
 
           &:hover {
             cursor: pointer;
@@ -43,9 +44,11 @@
           }
         }
 
-        .button_heart-active {
+
+        .button-heart-active {
+          fill: #EB5757;
+
           &:hover {
-            stroke: #dedbdb;
             cursor: pointer;
           }
         }

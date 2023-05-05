@@ -58,17 +58,13 @@ header {
             background-color: #3b3b3b;
             padding: 32px 30px;
             margin-right: 1px;
-            stroke: #FFFFFF;
+            stroke: #ffffff;
 
             &:hover {
-              background: #F05A00;
-
-              
+              background: #f05a00;
             }
           }
-          }
-
-          
+        }
 
         .info__sum {
           font-family: "Raleway";
@@ -92,7 +88,7 @@ header {
     background-color: black;
     padding-right: 110px;
     padding-left: 110px;
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-weight: 500;
 
     .header__catalog {
@@ -122,6 +118,7 @@ header {
       display: flex;
       color: white;
       margin: 26px 60px 26px 10px;
+      cursor: pointer;
 
       .header__links-item {
         margin-left: 10px;
@@ -133,7 +130,7 @@ header {
       border-radius: 5px;
       margin-top: 20px;
       margin-bottom: 20px;
-      
+
       .header__search-ic {
         margin: 14px 10px 14px 20px;
       }

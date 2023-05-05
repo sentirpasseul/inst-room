@@ -1,9 +1,8 @@
-import React from "react";
 import "./Item.scss";
 import { ReactComponent as StatsIcon } from "../../img/ic_stats.svg";
 import { ReactComponent as HeartIcon } from "../../img/ic_heart.svg";
+import { ReactComponent as HeartCheckedIcon } from "../../img/ic_heart-checked.svg";
 import { ReactComponent as CartIcon } from "../../img/ic_cart.svg";
-import item_img from "../../img/item_img.png";
 import { ReactComponent as DoneIcon } from "../../img/ic_done.svg";
 import { ReactComponent as StepIcon } from "../../img/ic_step.svg";
 import { useState } from "react";
@@ -35,7 +34,11 @@ export function Item({ product }: any) {
             <StatsIcon className="button-stats" />
           </div>
           <div className="item__button">
-            <HeartIcon className="button-heart" />
+            {isFavorite ? (
+              <HeartCheckedIcon className="button-heart-active" onClick={handleClickFav}/>
+            ) : (
+              <HeartIcon className="button-heart" onClick={handleClickFav}/>
+            )}
           </div>
         </div>
       </div>
