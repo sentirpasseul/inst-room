@@ -1,1 +1,0 @@
-import '../img/arrow_left.svg'
