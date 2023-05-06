@@ -11,7 +11,6 @@ export function HomePage() {
 
   return (
     <>
-      <Header />
       <ContainerBanners />
 
       <div className="container__items">
