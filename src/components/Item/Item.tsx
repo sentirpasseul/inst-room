@@ -25,7 +25,6 @@ export function Item({ product }: any) {
     setIsCompared((prev) => !prev);
   };
 
-
   return (
     <div className="container__item">
       <div className="item__header">
@@ -35,9 +34,15 @@ export function Item({ product }: any) {
         <div className="item__header-buttons">
           <div className="item__button">
             {isCompared ? (
-              <StatsIcon className="button-stats--active" onClick={handleClickCompare}/>
+              <StatsIcon
+                className="button-stats--active"
+                onClick={handleClickCompare}
+              />
             ) : (
-              <StatsIcon className="button-stats" onClick={handleClickCompare} />
+              <StatsIcon
+                className="button-stats"
+                onClick={handleClickCompare}
+              />
             )}
           </div>
           <div className="item__button">
@@ -54,21 +59,20 @@ export function Item({ product }: any) {
       </div>
       <div className="container__image">
         <img className="container__image-item" src={product.img} alt="" />
-
-        <div className="item__step">
-          <StepIcon className="item__step-img" />
-          <StepIcon className="item__step-img" />
-          <StepIcon className="item__step-img" />
-          <StepIcon className="item__step-img" />
-        </div>
+      </div>
+      <div className="item__step">
+        <StepIcon className="item__step-img" />
+        <StepIcon className="item__step-img" />
+        <StepIcon className="item__step-img" />
+        <StepIcon className="item__step-img" />
       </div>
       <div className="item__title">
         <span>{product.title}</span>
       </div>
       <div className="item__buy">
         <div className="item__price">
-          <span className="item__price-current">{product.price}</span>
-          <span className="item__price-old">{product.price}</span>
+          <span className="item__price-current">{product.price} ₽</span>
+          <span className="item__price-old">{product.price} ₽</span>
         </div>
         <div className="item__exist">
           <DoneIcon className="item__exist-icon" />
