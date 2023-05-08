@@ -96,9 +96,11 @@
     font-weight: 700;
     font-size: 16px;
     padding: 6px;
+    grid-auto-flow: dense;
     justify-content: start;
     align-content: center;
     align-self: stretch;
+    
   }
 
   .item__buy {

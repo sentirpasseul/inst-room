@@ -53,11 +53,13 @@ header {
         }
 
         .info__buttons {
-          display: flex;
+          display: grid;
+          grid-template-columns: 96px 96px 96px 96px;
+          column-gap: 1px;
           .info__buttons-button {
+            display: flex;
+            justify-content: center;
             background-color: #3b3b3b;
-            padding: 32px 30px;
-            margin-right: 1px;
             stroke: #ffffff;
 
             &:hover {
