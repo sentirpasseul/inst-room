@@ -1,4 +1,4 @@
-import "./Header.scss";
+import "./Header.module.scss";
 import header_logo from "../../img/header_logo.svg";
 import { ReactComponent as HeartIcon } from "../../img/ic_heart.svg";
 import { ReactComponent as StatsIcon } from "../../img/ic_stats.svg";

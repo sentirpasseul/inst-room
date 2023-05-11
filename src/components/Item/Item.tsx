@@ -1,4 +1,4 @@
-import "./Item.scss";
+import "./Item.module.scss";
 import { ReactComponent as StatsIcon } from "../../img/ic_stats.svg";
 import { ReactComponent as HeartIcon } from "../../img/ic_heart.svg";
 import { ReactComponent as CartIcon } from "../../img/ic_cart.svg";

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ReactComponent as InstagramIcon } from "../../img/ic_instagram.svg";
 import { ReactComponent as VkIcon } from "../../img/ic_vk.svg";
 import { ReactComponent as FacebookIcon } from "../../img/ic_facebook.svg";
-import './Footer.scss'
+import './Footer.module.scss'
 
 export function Footer() {
   return (

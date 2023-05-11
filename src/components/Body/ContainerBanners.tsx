@@ -1,4 +1,4 @@
-import "./ContainerBanners.scss";
+import "./ContainerBanners.module.scss";
 import { ReactComponent as ArrowLeftIcon} from '../../img/ic_arrow_left.svg'
 
 
