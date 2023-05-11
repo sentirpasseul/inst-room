@@ -20,7 +20,7 @@
     flex-direction: row;
     justify-content: flex-end;
     padding: 10px;
-    .item__header-buttons {
+    .item__header_buttons {
       justify-content: end;
       display: grid;
       grid-template-columns: 28px 28px;
@@ -29,7 +29,7 @@
       .item__button {
         border-color: #dedbdb;
 
-        .button-stats {
+        .button__stats {
           stroke: #dedbdb;
 
           &:hover {
@@ -38,7 +38,7 @@
           }
         }
 
-        .button-stats--active {
+        .button__stats_active {
           stroke: #f4a460;
 
           &:hover {
@@ -46,7 +46,7 @@
           }
         }
 
-        .button-heart {
+        .button__heart {
           stroke: #dedbdb;
 
           &:hover {
@@ -55,7 +55,7 @@
           }
         }
 
-        .button-heart--active {
+        .button__heart_active {
           fill: #eb5757;
 
           &:hover {
@@ -72,7 +72,7 @@
     align-content: center;
     max-width: 290px;
     max-height: 184px;
-    .container__image-item {
+    .container__image_item {
       max-width: 212px;
       max-height: 184px;
     }
@@ -86,7 +86,7 @@
     /* padding: 5px; */
     align-content: space-around;
     justify-content: center;
-    .item__step-img {
+    .item__step_img {
       fill: #dedbdb;
     }
   }
@@ -116,7 +116,7 @@
 
       font-size: 16px;
 
-      .item__price-old {
+      .item__price_old {
         font-size: 16px;
         text-decoration: line-through;
         color: #dedbdb;
@@ -133,12 +133,12 @@
       font-size: 12px;
       font-weight: 400;
 
-      .item__exist-icon {
+      .item__exist_icon {
         // max-width: 16px;
         //max-height: 16px;
         stroke: #126935;
       }
-      .item__exist-text {
+      .item__exist_text {
         color: #126935;
         text-transform: lowercase;
       }
@@ -152,7 +152,7 @@
       justify-self: self-end;
       // padding: 6px 10px;
 
-      .item__cart-icon {
+      .item__cart_icon {
         stroke: #f05a00;
       }
     }
