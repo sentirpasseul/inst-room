@@ -2,29 +2,29 @@ import { Link } from "react-router-dom";
 import { ReactComponent as InstagramIcon } from "../../img/ic_instagram.svg";
 import { ReactComponent as VkIcon } from "../../img/ic_vk.svg";
 import { ReactComponent as FacebookIcon } from "../../img/ic_facebook.svg";
-import './Footer.module.scss'
+import styles from './Footer.module.scss'
 
 export function Footer() {
   return (
     <footer>
-      <div className="container">
-        <div className="container__main">
-          <div className="main__catalog">
-            <p className="catalog-label">Малярные товары</p>
-            <p className="catalog-label">Электрооборудование</p>
-            <p className="catalog-label">Спецодежда</p>
-            <p className="catalog-label">Для дома и дачи</p>
-            <p className="catalog-label">Сезонное</p>
-            <p className="catalog-label">Инструмент</p>
+      <div className={styles.container}>
+        <div className={styles.container__main}>
+          <div className={styles.main__catalog}>
+            <p className={styles.catalog_label}>Малярные товары</p>
+            <p className={styles.catalog_label}>Электрооборудование</p>
+            <p className={styles.catalog_label}>Спецодежда</p>
+            <p className={styles.catalog_label}>Для дома и дачи</p>
+            <p className={styles.catalog_label}>Сезонное</p>
+            <p className={styles.catalog_label}>Инструмент</p>
           </div>
-          <div className="main__about">
-            <p className="about-label">О компании</p>
-            <p className="about-label">Контакты</p>
-            <p className="about-label">Новинки</p>
-            <p className="about-label">Хиты сезона</p>
-            <p className="about-label">Распродажи</p>
+          <div className={styles.main__about}>
+            <p className={styles.about_label}>О компании</p>
+            <p className={styles.about_label}>Контакты</p>
+            <p className={styles.about_label}>Новинки</p>
+            <p className={styles.about_label}>Хиты сезона</p>
+            <p className={styles.about_label}>Распродажи</p>
           </div>
-          <div className="main__info">
+          <div className={styles.main__info}>
             <div className="logo info-item">
               <img src="/img/header_logo.svg" alt="" />
             </div>
