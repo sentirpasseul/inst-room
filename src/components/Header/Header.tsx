@@ -11,7 +11,7 @@ import { ReactComponent as FacebookIcon } from "../../img/ic_facebook.svg";
 import { ReactComponent as SearchIcon } from "../../img/ic_search.svg";
 
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export function Header() {
   const [textSearch, setTextSearch] = useState("");
@@ -32,9 +32,9 @@ export function Header() {
       <section className="header__upper">
         <div className="header__upper-content">
           <div className="header__logo">
-            <Link to="/">
+            <NavLink to="/">
               <img src="/img/header_logo.svg" alt="" />
-            </Link>
+            </NavLink>
           </div>
           <div className="header__info">
             <span className="info__time info-item">
@@ -45,18 +45,18 @@ export function Header() {
               <p className="info__contacts-makeCall">Заказать звонок</p>
             </div>
             <div className="info__buttons">
-              <Link to="/favorites" className="info__buttons-button">
+              <NavLink to="/favorites" className="info__buttons-button">
                 <HeartIcon className="info__buttons-button-icon" />
-              </Link>
-              <Link to="/comparing" className="info__buttons-button">
+              </NavLink>
+              <NavLink to="/comparing" className="info__buttons-button">
                 <StatsIcon className="info__buttons-button-icon" />
-              </Link>
-              <Link to="/account" className="info__buttons-button">
+              </NavLink>
+              <NavLink to="/account" className="info__buttons-button">
                 <AccountIcon className="info__buttons-button-icon" />
-              </Link>
-              <Link to="/cart" className="info__buttons-button">
+              </NavLink>
+              <NavLink to="/cart" className="info__buttons-button">
                 <CartIcon className="info__buttons-button-icon" />
-              </Link>
+              </NavLink>
             </div>
             <div className="info__sum info-item">
               <p className="info__sum-title">Товаров на сумму</p>

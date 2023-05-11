@@ -7,18 +7,21 @@
 
 header {
   .header__upper {
-    display: flex;
+    display: grid;
     background-color: #212526;
+    
 
     .header__upper-content {
-      display: flex;
+      display: grid;
       justify-content: center;
-      padding-right: 110px;
-      padding-left: 110px;
+      grid-template-columns: 90px 216px 140px 387px 139px;
+
 
       .header__logo {
+        display: flex;
         cursor: pointer;
-        margin: 20px 80px;
+        align-items: center;
+        cursor: pointer;
       }
 
       .header__info {
@@ -29,12 +32,11 @@ header {
           font-style: normal;
           font-weight: 500;
           color: white;
-          margin: 38px 50px;
         }
 
         .info__contacts {
-          margin-top: 25px;
-          margin-right: 40px;
+          display: grid;
+
           font-family: "Raleway";
 
           .info__contacts-number {
@@ -44,7 +46,6 @@ header {
           }
 
           .info__contacts-makeCall {
-            margin-top: 10px;
             font-weight: 500;
             color: #fc573b;
             text-decoration: underline;
