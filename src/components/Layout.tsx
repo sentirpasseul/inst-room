@@ -1,4 +1,4 @@
-import Body from "./Body/Body.module.scss";
+import styles from "./Body/Body.module.scss";
 import { ContainerBanners } from "./Body/ContainerBanners";
 import { ContainerCatalog } from "./Body/ContainerCatalog";
 import { Footer } from "./Footer/Footer";
