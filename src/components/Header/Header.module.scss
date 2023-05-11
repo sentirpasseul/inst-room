@@ -11,7 +11,7 @@ header {
     background-color: #212526;
     
 
-    .header__upper-content {
+    .header__upper_content {
       display: grid;
       justify-content: center;
       grid-template-columns: 90px 216px 140px 387px 139px;
@@ -39,13 +39,13 @@ header {
 
           font-family: "Raleway";
 
-          .info__contacts-number {
+          .info__contacts_number {
             font-weight: 600;
             color: white;
             cursor: pointer;
           }
 
-          .info__contacts-makeCall {
+          .info__contacts_makeCall {
             font-weight: 500;
             color: #fc573b;
             text-decoration: underline;
@@ -57,7 +57,7 @@ header {
           display: grid;
           grid-template-columns: 96px 96px 96px 96px;
           column-gap: 1px;
-          .info__buttons-button {
+          .info__buttons_button {
             display: flex;
             justify-content: center;
             background-color: #3b3b3b;
@@ -73,11 +73,11 @@ header {
           font-family: "Raleway";
           margin: 25px 10px;
           color: white;
-          .info__sum-title {
+          .info__sum_title {
             font-weight: 500;
           }
 
-          .info__sum-summary {
+          .info__sum_summary {
             margin-top: 4px;
             font-weight: 700;
           }
@@ -101,7 +101,7 @@ header {
       border-radius: 5px;
       padding: 15px;
 
-      .header__catalog-text {
+      .header__catalog_text {
         margin-left: 15px;
       }
     }
@@ -111,7 +111,7 @@ header {
       color: white;
       margin-top: 35px;
 
-      .header__menu-item {
+      .header__menu_item {
         margin-left: 17px;
         margin-right: 17px;
       }
@@ -134,11 +134,11 @@ header {
       margin-top: 20px;
       margin-bottom: 20px;
 
-      .header__search-ic {
+      .header__search_ic {
         margin: 14px 10px 14px 20px;
       }
 
-      .header__search-input {
+      .header__search_input {
         margin-right: 60px;
       }
     }
