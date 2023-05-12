@@ -1,0 +1,40 @@
+@import "../../../scss/reset.css";
+
+.container__banners {
+  background: #212526;
+  display: grid;
+  padding: 20px 310px;
+
+  .banner_instrument {
+    display: flex;
+    background-image: url("../../../../public/img/banner_item.png");
+    padding: 32px;
+    max-width: 640px;
+    min-height: 488px;
+
+    .bunner__button_catalog {
+      background: #f05a00;
+      border-radius: 5px;
+      text-transform: uppercase;
+      padding: 17px 32px;
+      color: #ffffff;
+    }
+
+    .bunner__button_next {
+      background: #000000;
+      border-radius: 0px 5px;
+    }
+  }
+
+  .banner_stoks {
+    background-image: url("../../../../public/img/banner_stocks.png");
+  }
+
+  .banner__double_newItem {
+    background-image: url("../../../../public/img/banner_stocks_item.png");
+  }
+
+  .banner__double_stocksItem {
+    background-image: url("../../../../public/img/banner_new_item.png");
+  }
+}

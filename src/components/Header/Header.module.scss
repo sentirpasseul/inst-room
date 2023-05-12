@@ -10,7 +10,7 @@ header {
     display: flex;
     background-color: #212526;
 
-    .header__upper-content {
+    .header__upper_content {
       display: flex;
       justify-content: center;
       padding-right: 110px;
@@ -37,13 +37,13 @@ header {
           margin-right: 40px;
           font-family: "Raleway";
 
-          .info__contacts-number {
+          .info__contacts_number {
             font-weight: 600;
             color: white;
             cursor: pointer;
           }
 
-          .info__contacts-makeCall {
+          .info__contacts_makeCall {
             margin-top: 10px;
             font-weight: 500;
             color: #fc573b;
@@ -53,11 +53,13 @@ header {
         }
 
         .info__buttons {
-          display: flex;
-          .info__buttons-button {
+          display: grid;
+          grid-template-columns: 96px 96px 96px 96px;
+          column-gap: 1px;
+          .info__buttons_button {
+            display: flex;
             background-color: #3b3b3b;
             padding: 32px 30px;
-            margin-right: 1px;
             stroke: #ffffff;
 
             &:hover {
@@ -74,7 +76,7 @@ header {
             font-weight: 500;
           }
 
-          .info__sum-summary {
+          .info__sum_summary {
             margin-top: 4px;
             font-weight: 700;
           }
@@ -88,7 +90,7 @@ header {
     background-color: black;
     padding-right: 110px;
     padding-left: 110px;
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-weight: 500;
 
     .header__catalog {
@@ -98,7 +100,7 @@ header {
       border-radius: 5px;
       padding: 15px;
 
-      .header__catalog-text {
+      .header__catalog_text {
         margin-left: 15px;
       }
     }
@@ -108,7 +110,7 @@ header {
       color: white;
       margin-top: 35px;
 
-      .header__menu-item {
+      .header__menu_item {
         margin-left: 17px;
         margin-right: 17px;
       }
@@ -118,9 +120,8 @@ header {
       display: flex;
       color: white;
       margin: 26px 60px 26px 10px;
-      cursor: pointer;
 
-      .header__links-item {
+      .header__links_item {
         margin-left: 10px;
       }
     }
@@ -131,11 +132,11 @@ header {
       margin-top: 20px;
       margin-bottom: 20px;
 
-      .header__search-ic {
+      .header__search_ic {
         margin: 14px 10px 14px 20px;
       }
 
-      .header__search-input {
+      .header__search_input {
         margin-right: 60px;
       }
     }

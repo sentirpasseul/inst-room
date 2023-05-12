@@ -1,14 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import { HomePage } from './pages/HomePage';
-import { Route, Routes } from 'react-router-dom';
+import React from "react";
+import "./App.css";
+import { HomePage } from "./pages/HomePage/HomePage";
+import { Route, Router, Routes } from "react-router-dom";
+import { FavoritesPage } from "./pages/FavoritePage/FavoritesPage";
+import { Layout } from "./components/Layout";
+import { CartPage } from "./pages/CartPage/CartPage";
 
 function App() {
   return (
-
     <Routes>
-      <Route path='/' element={ <HomePage /> }></Route>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<HomePage />}></Route>
+        <Route path="favorites" element={<FavoritesPage />}></Route>
+        <Route path="comparing" element={<FavoritesPage />}></Route>
+        <Route path="account" element={<FavoritesPage />}></Route>
+        <Route path="cart" element={<CartPage />}></Route>
+      </Route>
     </Routes>
   );
 }

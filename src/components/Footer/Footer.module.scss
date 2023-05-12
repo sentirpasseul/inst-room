@@ -1,0 +1,44 @@
+@import "../../scss/reset.css";
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../fonts/Raleway/Raleway-Regular.ttf');
+}
+
+footer {
+    display: grid;
+
+    .container {
+        color: white;
+        background-color: #212526;
+        font-family: 'Raleway';
+        
+
+        .container__main {
+            display: flex;
+            justify-content: space-between;
+            padding: 60px 320px;
+
+            .main__catalog {
+                display: grid;
+                
+            }
+
+            .main__about {
+                display: grid;
+
+            
+            }
+
+            .main__info {
+                
+
+
+
+                .info_item {
+                    grid-row: 2;
+                }
+            }
+        }
+    }
+}
