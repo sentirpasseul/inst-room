@@ -1,4 +1,4 @@
-@import "../../scss/reset.css";
+@import "../../../scss/reset.css";
 
 .container__banners {
   background: #212526;
@@ -7,7 +7,7 @@
 
   .banner_instrument {
     display: flex;
-    background-image: url("../../../public/img/banner_item.png");
+    background-image: url("../../../../public/img/banner_item.png");
     padding: 32px;
     max-width: 640px;
     min-height: 488px;
@@ -27,14 +27,14 @@
   }
 
   .banner_stoks {
-    background-image: url("../../../public/img/banner_stocks.png");
+    background-image: url("../../../../public/img/banner_stocks.png");
   }
 
   .banner__double_newItem {
-    background-image: url("../../../public/img/banner_stocks_item.png");
+    background-image: url("../../../../public/img/banner_stocks_item.png");
   }
 
   .banner__double_stocksItem {
-    background-image: url("../../../public/img/banner_new_item.png");
+    background-image: url("../../../../public/img/banner_new_item.png");
   }
 }
