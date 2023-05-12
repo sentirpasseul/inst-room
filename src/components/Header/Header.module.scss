@@ -7,21 +7,18 @@
 
 header {
   .header__upper {
-    display: grid;
+    display: flex;
     background-color: #212526;
-    
 
     .header__upper_content {
-      display: grid;
+      display: flex;
       justify-content: center;
-      grid-template-columns: 90px 216px 140px 387px 139px;
-
+      padding-right: 110px;
+      padding-left: 110px;
 
       .header__logo {
-        display: flex;
         cursor: pointer;
-        align-items: center;
-        cursor: pointer;
+        margin: 20px 80px;
       }
 
       .header__info {
@@ -32,11 +29,12 @@ header {
           font-style: normal;
           font-weight: 500;
           color: white;
+          margin: 38px 50px;
         }
 
         .info__contacts {
-          display: grid;
-
+          margin-top: 25px;
+          margin-right: 40px;
           font-family: "Raleway";
 
           .info__contacts_number {
@@ -46,6 +44,7 @@ header {
           }
 
           .info__contacts_makeCall {
+            margin-top: 10px;
             font-weight: 500;
             color: #fc573b;
             text-decoration: underline;
@@ -59,8 +58,8 @@ header {
           column-gap: 1px;
           .info__buttons_button {
             display: flex;
-            justify-content: center;
             background-color: #3b3b3b;
+            padding: 32px 30px;
             stroke: #ffffff;
 
             &:hover {
@@ -73,7 +72,7 @@ header {
           font-family: "Raleway";
           margin: 25px 10px;
           color: white;
-          .info__sum_title {
+          .info__sum-title {
             font-weight: 500;
           }
 
@@ -91,7 +90,7 @@ header {
     background-color: black;
     padding-right: 110px;
     padding-left: 110px;
-    font-family: "Raleway";
+    font-family: 'Raleway';
     font-weight: 500;
 
     .header__catalog {
@@ -121,7 +120,6 @@ header {
       display: flex;
       color: white;
       margin: 26px 60px 26px 10px;
-      cursor: pointer;
 
       .header__links_item {
         margin-left: 10px;
