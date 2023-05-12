@@ -150,11 +150,38 @@
       border: 2px solid #f05a00;
       border-radius: 5px 0px;
       justify-self: self-end;
+      cursor: pointer;
       // padding: 6px 10px;
 
       .item__cart_icon {
         stroke: #f05a00;
+
+        
+      }
+      &hover {
+        stroke: white;
+        background: #f05a00;
+        
+      }
+
+      
+      
+    }
+
+    .item__cart_active {
+      display: grid;
+      padding: 7px 12px;
+      border: 2px solid #f05a00;
+      background: #f05a00;
+      border-radius: 5px 0px;
+      justify-self: self-end;
+      cursor: pointer;
+      .item__check_icon {
+        stroke: white;
+        background: #f05a00;
       }
     }
+
+    
   }
 }

@@ -4,6 +4,7 @@ import { ReactComponent as HeartIcon } from "../../img/ic_heart.svg";
 import { ReactComponent as CartIcon } from "../../img/ic_cart.svg";
 import { ReactComponent as DoneIcon } from "../../img/ic_done.svg";
 import { ReactComponent as StepIcon } from "../../img/ic_step.svg";
+import { ReactComponent as CheckIcon } from "../../img/ic_check.svg";
 import { useState } from "react";
 
 interface ItemsProps {
@@ -16,6 +17,7 @@ interface ItemsProps {
 export function Item({ product }: any) {
   const [isFavorite, setIsFavorite] = useState(false);
   const [isCompared, setIsCompared] = useState(false);
+  const [isAddToCart, setIsAddToCart] = useState(false);
 
   const handleClickFav = () => {
     setIsFavorite((prev) => !prev);
@@ -23,6 +25,10 @@ export function Item({ product }: any) {
 
   const handleClickCompare = () => {
     setIsCompared((prev) => !prev);
+  };
+
+  const handleClickAddCart = () => {
+    setIsAddToCart((prev) => !prev);
   };
 
   return (
@@ -52,13 +58,20 @@ export function Item({ product }: any) {
                 onClick={handleClickFav}
               />
             ) : (
-              <HeartIcon className={styles.button__heart} onClick={handleClickFav} />
+              <HeartIcon
+                className={styles.button__heart}
+                onClick={handleClickFav}
+              />
             )}
           </div>
         </div>
       </div>
       <div className={styles.container__image}>
-        <img className={styles.container__image_item} src={product.img} alt="" />
+        <img
+          className={styles.container__image_item}
+          src={product.img}
+          alt=""
+        />
       </div>
       <div className={styles.item__step}>
         <StepIcon className={styles.item__step_img} />
@@ -78,9 +91,20 @@ export function Item({ product }: any) {
           <DoneIcon className={styles.item__exist_icon} />
           <span className={styles.item__exist_text}>В наличии</span>
         </div>
-        <div className={styles.item__cart}>
-          <CartIcon className={styles.item__cart_icon} />
-        </div>
+        
+          {isAddToCart ? (
+            <div className={styles.item__cart_active} onClick={handleClickAddCart}>
+            <CheckIcon
+              className={styles.item__check_icon}
+            />
+            </div>
+          ) : (
+            <div className={styles.item__cart} onClick={handleClickAddCart}>
+            <CartIcon
+              className={styles.item__cart_icon}
+            />
+            </div>
+          )}
       </div>
     </div>
   );
