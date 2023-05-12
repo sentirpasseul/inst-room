@@ -4,6 +4,7 @@ import { HomePage } from "./pages/HomePage/HomePage";
 import { Route, Router, Routes } from "react-router-dom";
 import { FavoritesPage } from "./pages/FavoritePage/FavoritesPage";
 import { Layout } from "./components/Layout";
+import { CartPage } from "./pages/CartPage/CartPage";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Route path="favorites" element={<FavoritesPage />}></Route>
         <Route path="comparing" element={<FavoritesPage />}></Route>
         <Route path="account" element={<FavoritesPage />}></Route>
-        <Route path="cart" element={<FavoritesPage />}></Route>
+        <Route path="cart" element={<CartPage />}></Route>
       </Route>
     </Routes>
   );
