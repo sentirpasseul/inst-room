@@ -126,12 +126,11 @@
 
     .item__exist {
       display: grid;
-      grid-template-columns: 2 100px;
-      grid-template-columns: 10px 60px;
+      grid-template-columns: 10px 70px;
       align-items: baseline;
-      column-gap: 10px;
+      column-gap: 6px;
       justify-self: flex-end;
-      font-size: 12px;
+      font-size: 14px;
       font-weight: 400;
 
       .item__exist_icon {
