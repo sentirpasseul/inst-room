@@ -1,40 +1,147 @@
 @import "../../../scss/reset.css";
 
+@font-face {
+  font-family: "Prosto One";
+  src: url("../../../fonts/Prosto_One/ProstoOne-Regular.ttf");
+}
+
 .container__banners {
   background: #212526;
   display: grid;
-  padding: 20px 310px;
+  grid-template-columns: 640px 311px 310px;
+  justify-content: center;
+  align-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 20px;
 
   .banner_instrument {
-    display: flex;
+    display: grid;
     background-image: url("../../../../public/img/banner_item.png");
-    padding: 32px;
-    max-width: 640px;
-    min-height: 488px;
+    background-repeat: no-repeat;
+    justify-items: start;
+    gap: 80px;
+    border-radius: 5px;
 
-    .bunner__button_catalog {
+    .banner_title {
+      font-family: "Prosto One";
+      font-weight: 400;
+      font-size: 40px;
+      color: white;
+      padding: 32px;
+    }
+
+    .banner__button_catalog {
+      display: grid;
       background: #f05a00;
       border-radius: 5px;
       text-transform: uppercase;
       padding: 17px 32px;
+      margin-left: 24px;
       color: #ffffff;
+
+      &:hover {
+        background: #000000;
+        transition: 0.3s ease-in-out;
+      }
     }
 
-    .bunner__button_next {
+    .banner__button_next {
       background: #000000;
+      padding: 17px;
       border-radius: 0px 5px;
+
+      &:hover {
+        background: #f05a00;
+        transition: 0.3s ease-in-out;
+      }
     }
   }
 
-  .banner_stoks {
+  .banner__stocks {
     background-image: url("../../../../public/img/banner_stocks.png");
+    background-repeat: no-repeat;
+    max-width: 311px;
+    max-height: 488px;
+    display: grid;
+    justify-items: start;
+    align-items: start;
+    align-content: space-between;
+    border-radius: 5px;
+
+    .banner__stocks_text {
+      font-family: "Prosto One";
+      font-weight: 400;
+      font-size: 20px;
+      color: white;
+      display: grid;
+      padding: 16px;
+    }
+    .banner__button_next {
+      background: #000000;
+      padding: 17px;
+      border-radius: 0px 5px;
+
+      &:hover {
+        background: #f05a00;
+        transition: 0.3s ease-in-out;
+      }
+    }
   }
 
-  .banner__double_newItem {
-    background-image: url("../../../../public/img/banner_stocks_item.png");
-  }
+  .banner__double {
+    display: grid;
+    align-content: space-between;
+    .banner__double_newItem {
+      background-image: url("../../../../public/img/banner_new_item.png");
+      background-repeat: no-repeat;
+      border-radius: 5px;
 
-  .banner__double_stocksItem {
-    background-image: url("../../../../public/img/banner_new_item.png");
+      .double_newItem_text {
+        font-family: "Prosto One";
+        font-weight: 400;
+        font-size: 20px;
+        color: white;
+        display: grid;
+        margin-bottom: 116px;
+        padding: 16px;
+      }
+      .banner__button_next {
+        background: #000000;
+        padding: 17px;
+        border-radius: 0px 5px;
+
+        &:hover {
+          background: #f05a00;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+
+    .banner__double_stocksItem {
+      background-image: url("../../../../public/img/banner_stocks_item.png");
+      background-repeat: no-repeat;
+      border-radius: 5px;
+
+      .double_stocksItem_text {
+        font-family: "Prosto One";
+        font-weight: 400;
+        font-size: 20px;
+        color: white;
+        display: grid;
+        padding: 16px;
+        margin-bottom: 116px;
+      }
+      .banner__button_next {
+        background: #000000;
+        padding: 17px;
+        border-radius: 0px 5px;
+
+        &:hover {
+          background: #f05a00;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
   }
 }
