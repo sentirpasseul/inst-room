@@ -1,6 +1,5 @@
 import styles from "./ContainerBanners.module.scss";
-import { ReactComponent as ArrowLeftIcon} from '../../../img/ic_arrow_left.svg'
-
+import { ReactComponent as ArrowLeftIcon } from "../../../img/ic_arrow_left.svg";
 
 export function ContainerBanners() {
   return (
@@ -9,9 +8,11 @@ export function ContainerBanners() {
         <span className={styles.banner_title}>
           DeWALT - Инструмент с настоящим характером
         </span>
-        <button className={styles.bunner__button_catalog}>Перейти в каталог</button>
-        <button className={styles.bunner__button_next}>
-            <ArrowLeftIcon />
+        <button className={styles.banner__button_catalog}>
+          Перейти в каталог
+        </button>
+        <button className={styles.banner__button_next}>
+          <ArrowLeftIcon />
         </button>
       </div>
       <div className={styles.banner_stoks}></div>
@@ -20,5 +21,5 @@ export function ContainerBanners() {
         <div className={styles.banner__double_stocksItem}></div>
       </div>
     </div>
-  )
+  );
 }

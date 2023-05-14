@@ -1,33 +1,56 @@
 @import "../../../scss/reset.css";
 
+@font-face {
+  font-family: "Prosto One";
+  src: url("../../../fonts/Prosto_One/ProstoOne-Regular.ttf");
+}
+
 .container__banners {
   background: #212526;
   display: grid;
-  padding: 20px 310px;
+  grid-template-columns: 640px 311px;
+  justify-content: center;
+  align-content: center;
+  padding-top: 20px;
+  gap: 20px;
 
   .banner_instrument {
-    display: flex;
+    display: grid;
     background-image: url("../../../../public/img/banner_item.png");
-    padding: 32px;
-    max-width: 640px;
-    min-height: 488px;
+    background-repeat: no-repeat;
+    justify-items: start;
+    gap: 80px;
+    border-radius: 5px;
 
-    .bunner__button_catalog {
+    .banner_title {
+      font-family: "Prosto One";
+      font-weight: 400;
+      font-size: 40px;
+      color: white;
+      padding: 32px;
+    }
+
+    .banner__button_catalog {
+      display: grid;
       background: #f05a00;
       border-radius: 5px;
       text-transform: uppercase;
       padding: 17px 32px;
+      margin-left: 24px;
       color: #ffffff;
     }
 
-    .bunner__button_next {
+    .banner__button_next {
       background: #000000;
+      padding: 17px;
       border-radius: 0px 5px;
     }
   }
 
   .banner_stoks {
     background-image: url("../../../../public/img/banner_stocks.png");
+    width: 400px;
+    height: 200px;
   }
 
   .banner__double_newItem {
