@@ -8,10 +8,11 @@
 .container__banners {
   background: #212526;
   display: grid;
-  grid-template-columns: 640px 311px;
+  grid-template-columns: 640px 311px 310px;
   justify-content: center;
   align-content: center;
   padding-top: 20px;
+  padding-bottom: 20px;
   gap: 20px;
 
   .banner_instrument {
@@ -49,7 +50,7 @@
       background: #000000;
       padding: 17px;
       border-radius: 0px 5px;
-      
+
       &:hover {
         background: #f05a00;
         transition: 0.3s ease-in-out;
@@ -59,21 +60,22 @@
 
   .banner__stocks {
     background-image: url("../../../../public/img/banner_stocks.png");
+    background-repeat: no-repeat;
     max-width: 311px;
     max-height: 488px;
     display: grid;
     justify-items: start;
     align-items: start;
     align-content: space-between;
+    border-radius: 5px;
 
     .banner__stocks_text {
-      font-family: 'Prosto One';
+      font-family: "Prosto One";
       font-weight: 400;
       font-size: 20px;
       color: white;
       display: grid;
       padding: 16px;
-
     }
     .banner__button_next {
       background: #000000;
@@ -87,11 +89,59 @@
     }
   }
 
-  .banner__double_newItem {
-    background-image: url("../../../../public/img/banner_stocks_item.png");
-  }
+  .banner__double {
+    display: grid;
+    align-content: space-between;
+    .banner__double_newItem {
+      background-image: url("../../../../public/img/banner_new_item.png");
+      background-repeat: no-repeat;
+      border-radius: 5px;
 
-  .banner__double_stocksItem {
-    background-image: url("../../../../public/img/banner_new_item.png");
+      .double_newItem_text {
+        font-family: "Prosto One";
+        font-weight: 400;
+        font-size: 20px;
+        color: white;
+        display: grid;
+        margin-bottom: 116px;
+        padding: 16px;
+      }
+      .banner__button_next {
+        background: #000000;
+        padding: 17px;
+        border-radius: 0px 5px;
+
+        &:hover {
+          background: #f05a00;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
+
+    .banner__double_stocksItem {
+      background-image: url("../../../../public/img/banner_stocks_item.png");
+      background-repeat: no-repeat;
+      border-radius: 5px;
+
+      .double_stocksItem_text {
+        font-family: "Prosto One";
+        font-weight: 400;
+        font-size: 20px;
+        color: white;
+        display: grid;
+        padding: 16px;
+        margin-bottom: 116px;
+      }
+      .banner__button_next {
+        background: #000000;
+        padding: 17px;
+        border-radius: 0px 5px;
+
+        &:hover {
+          background: #f05a00;
+          transition: 0.3s ease-in-out;
+        }
+      }
+    }
   }
 }
