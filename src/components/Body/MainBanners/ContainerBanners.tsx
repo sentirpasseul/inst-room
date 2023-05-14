@@ -15,7 +15,12 @@ export function ContainerBanners() {
           <ArrowLeftIcon />
         </button>
       </div>
-      <div className={styles.banner_stoks}></div>
+      <div className={styles.banner__stocks}>
+        <span className={styles.banner__stocks_text}>Акции</span>
+        <button className={styles.banner__button_next}>
+          <ArrowLeftIcon />
+        </button>
+      </div>
       <div className={styles.banner__double}>
         <div className={styles.banner__double_newItem}></div>
         <div className={styles.banner__double_stocksItem}></div>

@@ -44,13 +44,42 @@
       background: #000000;
       padding: 17px;
       border-radius: 0px 5px;
+      
+      &:hover {
+        background: #f05a00;
+        transition: 0.3s ease-in-out;
+      }
     }
   }
 
-  .banner_stoks {
+  .banner__stocks {
     background-image: url("../../../../public/img/banner_stocks.png");
-    width: 400px;
-    height: 200px;
+    max-width: 311px;
+    max-height: 488px;
+    display: grid;
+    justify-items: start;
+    align-items: start;
+    align-content: space-between;
+
+    .banner__stocks_text {
+      font-family: 'Prosto One';
+      font-weight: 400;
+      font-size: 20px;
+      color: white;
+      display: grid;
+      padding: 16px;
+
+    }
+    .banner__button_next {
+      background: #000000;
+      padding: 17px;
+      border-radius: 0px 5px;
+
+      &:hover {
+        background: #f05a00;
+        transition: 0.3s ease-in-out;
+      }
+    }
   }
 
   .banner__double_newItem {
