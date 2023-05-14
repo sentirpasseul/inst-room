@@ -38,6 +38,11 @@
       padding: 17px 32px;
       margin-left: 24px;
       color: #ffffff;
+
+      &:hover {
+        background: #000000;
+        transition: 0.3s ease-in-out;
+      }
     }
 
     .banner__button_next {
